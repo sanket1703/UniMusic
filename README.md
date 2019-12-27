@@ -8,3 +8,6 @@ Log -Sanket
 2) put a search bar on the top (only on one of it which can be easily replicated to the other screens)
 3) used FontAwsome Icons to make the icons for the tabs 
 -------------------------------------------------------------------
+Log - Nirali
+1) Material UI Themes
+2) App Launcher Icon changed
