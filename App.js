@@ -23,7 +23,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       tabBarLabel : 'Tracks',
       tabBarIcon : ({tintColor})=>( <FontAwsomeIcon name = "music" color = {tintColor} size = {25}></FontAwsomeIcon>),
    
-      tabBarColor : 'black'
+      tabBarColor : '#1565C0'
 
     
     },
@@ -33,7 +33,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
     navigationOptions:{
       tabBarLabel : 'Albums',
       tabBarIcon : ({tintColor})=>( <FontAwsomeIcon name = "tasks" color = {tintColor} size = {25}></FontAwsomeIcon>),
-      tabBarColor : 'black'
+      tabBarColor : '#1565C0'
 
 
    
@@ -44,7 +44,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
     navigationOptions:{
       tabBarLabel : 'Artists',
       tabBarIcon : ({tintColor})=>( <FontAwsomeIcon name = "user-o" color = {tintColor} size = {25}></FontAwsomeIcon>),
-      tabBarColor : 'black'
+      tabBarColor : '#1565C0'
 
 
       
@@ -56,7 +56,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
     navigationOptions:{
       tabBarLabel : 'Tag',
       tabBarIcon : ({tintColor})=>( <FontAwsomeIcon name = "heart" color = {tintColor} size = {24}></FontAwsomeIcon>),
-      tabBarColor : 'black'
+      tabBarColor : '#1565C0'
 
 
       
