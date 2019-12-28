@@ -1,5 +1,7 @@
 import React ,{Component} from 'react';
 import { View, Text,TextInput,FlatList } from 'react-native';
+import {styles } from '../styles'
+
 export default class album extends Component{
     
     constructor(props) {
@@ -28,17 +30,19 @@ export default class album extends Component{
 
     render(){
         return (
-            <View style={{flex:1}}>
-                <View style = {{paddingTop : 20,opacity : 0.7}}>                
-                    <TextInput style = {{textAlignVertical: "center",borderRadius : 20,height : 40 ,width : 340, borderColor : 'grey',borderWidth : 2,alignSelf : 'center'}}
+            <View style={styles.container}>
+                <View style = {styles.upperSection}>                
+                    <TextInput style = {styles.textInput}
+                    placeholder = '     Search album'
+                    placeholderTextColor ='black'
                       onChangeText={this.Search}></TextInput>
                 </View>
 
             <FlatList
                 data={this.state.dataSource}
                 renderItem={({ item }) =>
-              <View style={{ justifyContent: 'center' }}>
-                <Text style={{ color: 'black', fontSize: 10, fontWeight: 'bold' }}>{item.name}</Text>
+              <View style={styles.box}>
+                <Text style={styles.text}>{item.name}</Text>
               </View>
             }
             keyExtractor={(item, index) => index.toString()}
